@@ -4,7 +4,7 @@
 from os.path import expanduser
 #HOME_DIR = expanduser("~")
 
-HOME_DIR = '/home/shivamd/vfdt'
+HOME_DIR = '/home/shivam/PycharmProjects/vfdt'
 #HOME_DIR =  'C:/Users/smd1f19/experiments/vfdt'
 print(HOME_DIR)
 

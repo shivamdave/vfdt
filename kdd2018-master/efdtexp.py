@@ -17,20 +17,19 @@ random_source_str = r'--random-source=<( openssl enc -aes-256-ctr -pass pass:see
 
 
 def runexp(learners, generators, evaluators, suffix):
-    abc = input('step 1')
     output_dir = mcv.OUTPUT_DIR + "/" + str(suffix)
+    time.sleep(3)
     print('step 1: output_dir: ', output_dir)
-    abc = input('step 2')
     experiments = se.CompositeExperiment.make_experiments(mcv.MOA_STUMP, evaluators, learners, generators)
+    time.sleep(3)
     print('step 2: experiment obj complete')
-    abc = input('step 3')
     # ---------- Comment these lines out to get just charts
     processes = se.CompositeExperiment.make_running_processes(experiments, output_dir)
+    time.sleep(3)
     print('step 3: process obj complete')
-    abc = input('step 4')
     se.Utils.wait_for_processes(processes)
+    time.sleep(3)
     print('step 4: process obj complete')
-    abc = input('step 5')
     # ----------
 
     error_df = se.Utils.error_df_from_folder(output_dir)
@@ -76,16 +75,15 @@ def shuffledRealExpOps(exp_no, num_streams, learners, generator_template, evalua
     # Generate the shuffled tails for the streams
     # for i in range(0, num_streams):
     for i in range(0, num_streams):
-        # subprocesses.append(subprocess.Popen(['shuf -o ' + shuf_prefix + str(i) + ' ' + tail_prefix + ' ' + string.replace(random_source_str, 'seed', str(i)) ], shell=True, executable = '/bin/bash'))
-        command = 'shuf -o ' + shuf_prefix + str(i) + ' ' + tail_prefix + ' ' + string.replace(random_source_str,
-                                                                                               'seed', str(i))
-        print('command ', command)
-        os.system(command)
+        subprocesses.append(subprocess.Popen(['shuf -o ' + shuf_prefix + str(i) + ' ' + tail_prefix + ' ' + string.replace(random_source_str, 'seed', str(i)) ], shell=True, executable = '/bin/bash'))
+        #command = 'shuf -o ' + shuf_prefix + str(i) + ' ' + tail_prefix + ' ' + string.replace(random_source_str, 'seed', str(i))
+        #print 'command ', command
+        #os.system(command)
 
     # Need executable = /bin/bash, Otherwise it will use /bin/sh, which on Ubuntu is dash, a basic shell that doesn't recognize ( symbols
 
-    # xit_codes = [p.wait() for p in subprocesses] # Wait- Ensure all shuffled tails have been created
-    # subprocesses = []
+    exit_codes = [p.wait() for p in subprocesses] # Wait- Ensure all shuffled tails have been created
+    subprocesses = []
 
     # ==================
 
@@ -126,6 +124,7 @@ def shuffledRealExpOps(exp_no, num_streams, learners, generator_template, evalua
         # +++++++++++++++++ Comment this out in order to just draw charts without running experiments
         seeded_experiments = se.CompositeExperiment.make_experiments(mcv.MOA_STUMP, evaluators, singleLearnerList,
                                                                      seeded_generators)
+        print('output_dir', output_dir)
         processes = se.CompositeExperiment.make_running_processes(seeded_experiments, output_dir)
         all_processes.extend(processes)
 
@@ -252,16 +251,16 @@ def chart2():
     learners = [r"-l trees.VFDT", r"-l trees.EFDT"]
 
     # generator_template = r"-s (ArffFileStream -f /mnt/datasets/wisdm/wisdmshuf.arff -c -1)"
-    generator_template = r"-s (ArffFileStream -f /home/shivamd/vfdt/datasets/wisdm/WISDM_ar_v1.1_transformed.arff -c -1)"
+    generator_template = r"-s (ArffFileStream -f /home/PycharmProjects/vfdt/datasets/wisdm/WISDM_ar_v1.1_transformed.arff -c -1)"
     evaluators = [r"EvaluatePrequential -i 20000000 -f 1000 -q 1000"]
 
     # shuf_prefix = r"/mnt/datasets/wisdm/wisdmshuf"
     # head_prefix = r"/mnt/datasets/wisdm/wisdmhead"
     # tail_prefix = r"/mnt/datasets/wisdm/wisdmtail"
 
-    shuf_prefix = r"/home/shivamd/vfdt/datasets/wisdm/wisdmshuf"
-    head_prefix = r"/home/shivamd/vfdt/datasets/wisdm/wisdmhead"
-    tail_prefix = r"/home/shivamd/vfdt/datasets/wisdm/wisdmtail"
+    shuf_prefix = r"/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf"
+    head_prefix = r"/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmhead"
+    tail_prefix = r"/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmtail"
 
     shuffledRealExpOps(exp_no, num_streams, learners, generator_template, evaluators, shuf_prefix, head_prefix,
                        tail_prefix)
@@ -270,7 +269,7 @@ def chart2():
 def chart2a():
     learners = [r"-l trees.VFDT", r"-l trees.EFDT"]
     generators = [
-        r"-s (ArffFileStream -f /home/shivamd/vfdt/datasets/wisdm/WISDM_ar_v1.1_transformed.arff -c -1)"
+        r"-s (ArffFileStream -f /home/PycharmProjects/vfdt/datasets/wisdm/WISDM_ar_v1.1_transformed.arff -c -1)"
     ]
     evaluators = [r"EvaluatePrequential -i 20000000 -f 1000 -q 1000"]
     runexp(learners, generators, evaluators, '2a')

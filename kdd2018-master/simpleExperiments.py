@@ -123,7 +123,9 @@ class CompositeExperiment:
 
     counter = 0
     for exp in experiments:
+      print('simpleExperiments.py -> output_dir', output_dir)
       output_file = output_dir + '/' + str(counter)
+      print('simpleExperiments.py -> output_file', output_file)
       process = Experiment.make_running_process(exp, output_file)
       processes.append(process)
       counter+=1
