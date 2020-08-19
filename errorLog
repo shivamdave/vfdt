@@ -1,0 +1,97 @@
+/home/shivam/PycharmProjects/vfdt/venv/bin/python /snap/pycharm-professional/211/plugins/python/helpers/pydev/pydevconsole.py --mode=client --port=35681
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['/home/shivam/PycharmProjects/vfdt'])
+PyDev console: starting.
+Python 2.7.17 (default, Nov  7 2019, 10:07:09)
+[GCC 9.2.1 20191008] on linux2
+runfile('/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py', wdir='/home/shivam/PycharmProjects/vfdt/kdd2018-master')
+/home/shivam/PycharmProjects/vfdt
+{}
+{2: <Process(Process-1, initial)>, '2a': <Process(Process-2, initial)>}
+('step 1: output_dir: ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a')
+('make_experiment 101', 'stump:', 'java -cp commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'evaluators:', ['EvaluatePrequential -i 20000000 -f 1000 -q 1000'], 'learners:', ['-l trees.VFDT', '-l trees.EFDT'], 'generators:', ['-s (ArffFileStream -f /home/PycharmProjects/vfdt/datasets/wisdm/WISDM_ar_v1.1_transformed.arff -c -1)'])
+in the looper
+traceback inspect
+-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf0.arff -c -1)
+in the looper
+traceback inspect
+step 2: experiment obj complete
+('changed dir name mcv.MOA_DIR', '/home/shivam/PycharmProjects/vfdt/execmoa')
+('print output directory', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a')
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a/0')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fe2bf8b1370>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a/0')
+-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf1.arff -c -1)
+-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf2.arff -c -1)
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/multiprocessing/process.py", line 267, in _bootstrap
+    self.run()
+  File "/usr/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py", line 271, in chart2a
+    runexp(learners, generators, evaluators, '2a')
+  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py", line 25, in runexp
+    processes = se.CompositeExperiment.make_running_processes(experiments, output_dir)
+  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/simpleExperiments.py", line 129, in make_running_processes
+    process = Experiment.make_running_process(exp, output_file)
+  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/simpleExperiments.py", line 93, in make_running_process
+    process = subprocess.Popen(args, stdout=open(output_file, "w+"))
+  File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf3.arff -c -1)
+-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf4.arff -c -1)
+-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf5.arff -c -1)
+-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf6.arff -c -1)
+-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf7.arff -c -1)
+-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf8.arff -c -1)
+-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf9.arff -c -1)
+('make_experiment 101', 'stump:', 'java -cp commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'evaluators:', ['EvaluatePrequential -i 20000000 -f 1000 -q 1000'], 'learners:', ['-l trees.VFDT'], 'generators:', ['-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf0.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf1.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf2.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf3.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf4.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf5.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf6.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf7.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf8.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf9.arff -c -1)'])
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+('output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('changed dir name mcv.MOA_DIR', '/home/shivam/PycharmProjects/vfdt/execmoa')
+('print output directory', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/0')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fe2bf849960>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/0')
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/multiprocessing/process.py", line 267, in _bootstrap
+    self.run()
+  File "/usr/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py", line 262, in chart2
+    tail_prefix)
+  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py", line 124, in shuffledRealExpOps
+    processes = se.CompositeExperiment.make_running_processes(seeded_experiments, output_dir)
+  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/simpleExperiments.py", line 129, in make_running_processes
+    process = Experiment.make_running_process(exp, output_file)
+  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/simpleExperiments.py", line 93, in make_running_process
+    process = subprocess.Popen(args, stdout=open(output_file, "w+"))
+  File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory

@@ -18,17 +18,13 @@ random_source_str = r'--random-source=<( openssl enc -aes-256-ctr -pass pass:see
 
 def runexp(learners, generators, evaluators, suffix):
     output_dir = mcv.OUTPUT_DIR + "/" + str(suffix)
-    time.sleep(3)
     print('step 1: output_dir: ', output_dir)
     experiments = se.CompositeExperiment.make_experiments(mcv.MOA_STUMP, evaluators, learners, generators)
-    time.sleep(3)
     print('step 2: experiment obj complete')
     # ---------- Comment these lines out to get just charts
-    processes = se.CompositeExperiment.make_running_processes(experiments, output_dir)
-    time.sleep(3)
+    processes = se.CompositeExperiment.make_running_processes(experiments, output_dir
     print('step 3: process obj complete')
     se.Utils.wait_for_processes(processes)
-    time.sleep(3)
     print('step 4: process obj complete')
     # ----------
 
