@@ -1,0 +1,8 @@
+('subprocess.py -> line 1041 -> data:',
+'cexceptions\nOSError\np0\n(I2\nS\'
+No such file or directory\'\np1\ntp2\nRp3\n(dp4\nS\'child_traceback\'\np5\nS\'Traceback
+(most recent call last):\\n  File "/usr/lib/python2.7/subprocess.py", line 997, in _execute_child\\n
+os.execvp(executable, args)\\n  File "/home/shivam/PycharmProjects/vfdt/venv/lib/python2.7/os.py",
+line 346, in execvp\\n    _execvpe(file, args)\\n
+File "/home/shivam/PycharmProjects/vfdt/venv/lib/python2.7/os.py", line 382, in _execvpe\\n
+func(fullname, *argrest)\\nOSError: [Errno 2] No such file or directory\\n\'\np6\nsb.')

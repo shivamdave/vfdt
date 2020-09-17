@@ -76,7 +76,7 @@ class Plot:
     wrapped_cmd = '\n'.join(wrap(cmd, 100))
 
     figure = ax2.get_figure()
-
+    print('figPath simpleExperiments.py --> ',figPath)
     figure.savefig(figPath+'.png', bbox_inches='tight')
 
 class Experiment:
@@ -90,9 +90,10 @@ class Experiment:
   def make_running_process(exp, output_file):
     print('args of make_running_process','exp:',exp,'output_file:',output_file)
     args = shlex.split(exp.cmd)
+    print('output_file in simpleExperiments.py --> ', output_file)
+    print('args in simpleExperiments.py --> ',args)
     process = subprocess.Popen(args, stdout=open(output_file, "w+"))
     return process
-
 
 class CompositeExperiment:
 
@@ -127,6 +128,7 @@ class CompositeExperiment:
       output_file = output_dir + '/' + str(counter)
       print('simpleExperiments.py -> output_file', output_file)
       process = Experiment.make_running_process(exp, output_file)
+      #process = Experiment.make_running_process(exp, r'/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a/0')
       processes.append(process)
       counter+=1
 
@@ -167,7 +169,7 @@ class Utils:
     print('simple experiments -> files:', files)
     for filename in files:
       file_df = Utils.file_to_dataframe(folder+'/'+filename)
-      print('file dataframe head -> ',file_df.head())
+      print('file_df in simpleExperiments.py -> ',file_df)
       error_df[str(filename)] = (100.0 - file_df['classifications correct (percent)']) / 100.0
 
     return error_df

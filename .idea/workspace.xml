@@ -1,28 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="50bd786c-a84b-42be-95d6-8f2dc637120e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vfdt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vfdt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/wisdm/wisdmhead" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/wisdm/wisdmhead" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/wisdm/wisdmtail" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/wisdm/wisdmtail" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exp_dir/output/2a/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kdd2018-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kdd2018-master/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errorLog" beforeDir="false" afterPath="$PROJECT_DIR$/errorLog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exp_dir/output/2/0/0" beforeDir="false" afterPath="$PROJECT_DIR$/exp_dir/output/2/0/0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kdd2018-master/efdtexp.py" beforeDir="false" afterPath="$PROJECT_DIR$/kdd2018-master/efdtexp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kdd2018-master/moa_command_vars.py" beforeDir="false" afterPath="$PROJECT_DIR$/kdd2018-master/moa_command_vars.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kdd2018-master/simpleExperiments.py" beforeDir="false" afterPath="$PROJECT_DIR$/kdd2018-master/simpleExperiments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate.csh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate.fish" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate_this.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install-2.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/f2py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/f2py2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/f2py2.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip2.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/python" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/python-config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/python2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/python2.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/wheel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/local/bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/local/lib" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="d49e403c-8065-4802-ba6c-8b839fab7aa3" />
+  <component name="JupyterTrust" id="06d64c05-d21c-42c2-9ac4-76133f115eed" />
   <component name="ProjectId" id="1fu7nUhfTt80LZqmghnTwxg2NbB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -78,6 +117,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="simpleExperiments" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="vfdt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kdd2018-master" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kdd2018-master/simpleExperiments.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.efdtexp" />
@@ -102,13 +163,33 @@
       <workItem from="1597056319613" duration="5682000" />
       <workItem from="1597839909520" duration="3265000" />
       <workItem from="1597844290985" duration="4748000" />
+      <workItem from="1597986434313" duration="1426000" />
+      <workItem from="1597987895454" duration="4857000" />
+      <workItem from="1600329769606" duration="11246000" />
+      <workItem from="1600348569759" duration="6399000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="468" y="265" width="565" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597999576387">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="468" y="265" width="565" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1368.873@72.27.1368.873" timestamp="1597999576387" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1597062066041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -141,25 +222,32 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597060844646" />
-    <state x="100" y="80" width="1022" height="737" key="SettingsEditor" timestamp="1597841133887">
-      <screen x="70" y="27" width="1082" height="837" />
+    <state x="123" y="101" width="1022" height="737" key="SettingsEditor" timestamp="1597986887518">
+      <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="100" y="80" width="1022" height="737" key="SettingsEditor/70.27.1082.837@70.27.1082.837" timestamp="1597841133887" />
+    <state x="123" y="101" key="SettingsEditor/72.27.1848.1173@72.27.1848.1173" timestamp="1597986887518" />
     <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1597056320119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597056320119" />
-    <state x="301" y="54" width="620" height="783" key="find.popup" timestamp="1597842311590">
-      <screen x="70" y="27" width="1082" height="837" />
+    <state x="714" y="101" width="814" height="722" key="find.popup" timestamp="1600351648632">
+      <screen x="72" y="27" width="1608" height="1023" />
     </state>
     <state x="301" y="54" width="620" height="783" key="find.popup/70.27.1082.837@70.27.1082.837" timestamp="1597842311590" />
+    <state x="656" y="83" width="784" height="817" key="find.popup/72.27.1368.873@72.27.1368.873" timestamp="1600346710577" />
+    <state x="714" y="101" width="814" height="722" key="find.popup/72.27.1608.1023@72.27.1608.1023" timestamp="1600351648632" />
+    <state x="842" y="437" width="540" height="344" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597987806748">
+      <screen x="72" y="27" width="1848" height="1173" />
+    </state>
+    <state x="842" y="437" width="540" height="344" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1597987806748" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/kdd2018-master/efdtexp.py</url>
-          <line>832</line>
+          <line>831</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

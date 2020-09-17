@@ -1,9 +1,9 @@
-/home/shivam/PycharmProjects/vfdt/venv/bin/python /snap/pycharm-professional/211/plugins/python/helpers/pydev/pydevconsole.py --mode=client --port=35681
+/home/shivam/PycharmProjects/vfdt/venv/bin/python /snap/pycharm-professional/213/plugins/python/helpers/pydev/pydevconsole.py --mode=client --port=46059
 import sys; print('Python %s on %s' % (sys.version, sys.platform))
 sys.path.extend(['/home/shivam/PycharmProjects/vfdt'])
 PyDev console: starting.
-Python 2.7.17 (default, Nov  7 2019, 10:07:09)
-[GCC 9.2.1 20191008] on linux2
+Python 2.7.18rc1 (default, Apr  7 2020, 12:05:55)
+[GCC 9.3.0] on linux2
 runfile('/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py', wdir='/home/shivam/PycharmProjects/vfdt/kdd2018-master')
 /home/shivam/PycharmProjects/vfdt
 {}
@@ -13,35 +13,8 @@ runfile('/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py', wdir='/ho
 in the looper
 traceback inspect
 -s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf0.arff -c -1)
-in the looper
-traceback inspect
-step 2: experiment obj complete
-('changed dir name mcv.MOA_DIR', '/home/shivam/PycharmProjects/vfdt/execmoa')
-('print output directory', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a')
-('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a')
-('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a/0')
-('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fe2bf8b1370>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a/0')
 -s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf1.arff -c -1)
 -s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf2.arff -c -1)
-Process Process-2:
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/multiprocessing/process.py", line 267, in _bootstrap
-    self.run()
-  File "/usr/lib/python2.7/multiprocessing/process.py", line 114, in run
-    self._target(*self._args, **self._kwargs)
-  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py", line 271, in chart2a
-    runexp(learners, generators, evaluators, '2a')
-  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py", line 25, in runexp
-    processes = se.CompositeExperiment.make_running_processes(experiments, output_dir)
-  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/simpleExperiments.py", line 129, in make_running_processes
-    process = Experiment.make_running_process(exp, output_file)
-  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/simpleExperiments.py", line 93, in make_running_process
-    process = subprocess.Popen(args, stdout=open(output_file, "w+"))
-  File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-    errread, errwrite)
-  File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-    raise child_exception
-OSError: [Errno 2] No such file or directory
 -s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf3.arff -c -1)
 -s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf4.arff -c -1)
 -s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf5.arff -c -1)
@@ -52,6 +25,22 @@ OSError: [Errno 2] No such file or directory
 ('make_experiment 101', 'stump:', 'java -cp commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'evaluators:', ['EvaluatePrequential -i 20000000 -f 1000 -q 1000'], 'learners:', ['-l trees.VFDT'], 'generators:', ['-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf0.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf1.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf2.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf3.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf4.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf5.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf6.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf7.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf8.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf9.arff -c -1)'])
 in the looper
 traceback inspect
+in the looper
+traceback inspect
+step 2: experiment obj complete
+('changed dir name mcv.MOA_DIR', '/home/shivam/PycharmProjects/vfdt/execmoa')
+('print output directory', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a')
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a/0')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd1f7b6cd0>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a/0')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a/0')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.VFDT', '-s', '(ArffFileStream', '-f', '/home/PycharmProjects/vfdt/datasets/wisdm/WISDM_ar_v1.1_transformed.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a/1')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd04548b90>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a/1')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a/1')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.EFDT', '-s', '(ArffFileStream', '-f', '/home/PycharmProjects/vfdt/datasets/wisdm/WISDM_ar_v1.1_transformed.arff', '-c', '-1)'])
+step 3: process obj complete
 in the looper
 traceback inspect
 in the looper
@@ -75,23 +64,425 @@ traceback inspect
 ('print output directory', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
 ('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
 ('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/0')
-('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fe2bf849960>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/0')
-Process Process-1:
-Traceback (most recent call last):
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd1f72b5f0>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/0')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/0')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.VFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf0.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/1')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d0f0>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/1')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/1')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.VFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf1.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/2')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d140>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/2')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/2')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.VFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf2.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/3')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d190>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/3')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/3')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.VFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf3.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/4')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d1e0>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/4')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/4')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.VFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf4.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/5')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d230>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/5')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/5')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.VFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf5.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/6')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d280>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/6')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/6')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.VFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf6.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/7')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d2d0>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/7')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/7')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.VFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf7.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/8')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d320>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/8')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/8')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.VFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf8.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/9')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d370>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/9')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/9')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.VFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf9.arff', '-c', '-1)'])
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+- 0.00s [failed] 100.00%
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+- 0.00s [running] Preparing option stream...
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+
+Task failed. Reason:
+java.lang.RuntimeException: ArffFileStream restart failed.
+	at moa.streams.ArffFileStream.restart(ArffFileStream.java:143)
+	at moa.streams.ArffFileStream.prepareForUseImpl(ArffFileStream.java:87)
+	at moa.options.AbstractOptionHandler.prepareForUse(AbstractOptionHandler.java:86)
+	at moa.options.OptionsHandler.prepareClassOptions(OptionsHandler.java:149)
+	at moa.options.AbstractOptionHandler.prepareClassOptions(AbstractOptionHandler.java:151)
+	at moa.tasks.AbstractTask.doTask(AbstractTask.java:52)
+	at moa.tasks.TaskThread.run(TaskThread.java:76)
+Caused by: java.io.FileNotFoundException: /home/PycharmProjects/vfdt/datasets/wisdm/WISDM_ar_v1.1_transformed.arff (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at moa.streams.ArffFileStream.restart(ArffFileStream.java:127)
+	... 6 more
+
+Task failed. Reason:
+java.lang.RuntimeException: ArffFileStream restart failed.
+	at moa.streams.ArffFileStream.restart(ArffFileStream.java:143)
+	at moa.streams.ArffFileStream.prepareForUseImpl(ArffFileStream.java:87)
+	at moa.options.AbstractOptionHandler.prepareForUse(AbstractOptionHandler.java:86)
+	at moa.options.OptionsHandler.prepareClassOptions(OptionsHandler.java:149)
+	at moa.options.AbstractOptionHandler.prepareClassOptions(AbstractOptionHandler.java:151)
+	at moa.tasks.AbstractTask.doTask(AbstractTask.java:52)
+	at moa.tasks.TaskThread.run(TaskThread.java:76)
+Caused by: java.io.FileNotFoundException: /home/PycharmProjects/vfdt/datasets/wisdm/WISDM_ar_v1.1_transformed.arff (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at moa.streams.ArffFileStream.restart(ArffFileStream.java:127)
+	... 6 more
+step 4: process obj complete
+('simple experiments -> files:', ['0', '1'])
+('some_file in simpleExperiment line 144:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2a/0')
+Process Process-2:
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+- 0.00s [running] Preparing option stream...                                   Traceback (most recent call last):
   File "/usr/lib/python2.7/multiprocessing/process.py", line 267, in _bootstrap
     self.run()
   File "/usr/lib/python2.7/multiprocessing/process.py", line 114, in run
     self._target(*self._args, **self._kwargs)
-  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py", line 262, in chart2
-    tail_prefix)
-  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py", line 124, in shuffledRealExpOps
-    processes = se.CompositeExperiment.make_running_processes(seeded_experiments, output_dir)
-  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/simpleExperiments.py", line 129, in make_running_processes
-    process = Experiment.make_running_process(exp, output_file)
-  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/simpleExperiments.py", line 93, in make_running_process
-    process = subprocess.Popen(args, stdout=open(output_file, "w+"))
-  File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-    errread, errwrite)
-  File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-    raise child_exception
-OSError: [Errno 2] No such file or directory
+  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py", line 270, in chart2a
+    runexp(learners, generators, evaluators, '2a')
+  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/efdtexp.py", line 31, in runexp
+    error_df = se.Utils.error_df_from_folder(output_dir)
+  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/simpleExperiments.py", line 171, in error_df_from_folder
+    file_df = Utils.file_to_dataframe(folder+'/'+filename)
+  File "/home/shivam/PycharmProjects/vfdt/kdd2018-master/simpleExperiments.py", line 155, in file_to_dataframe
+    return pd.read_csv(some_file, index_col=False, header=0, skiprows=0)
+  File "/home/shivam/PycharmProjects/vfdt/venv/local/lib/python2.7/site-packages/pandas/io/parsers.py", line 702, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/shivam/PycharmProjects/vfdt/venv/local/lib/python2.7/site-packages/pandas/io/parsers.py", line 429, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/shivam/PycharmProjects/vfdt/venv/local/lib/python2.7/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/home/shivam/PycharmProjects/vfdt/venv/local/lib/python2.7/site-packages/pandas/io/parsers.py", line 1122, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/shivam/PycharmProjects/vfdt/venv/local/lib/python2.7/site-packages/pandas/io/parsers.py", line 1853, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 545, in pandas._libs.parsers.TextReader.__cinit__
+EmptyDataError: No columns to parse from file
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+
+Task completed in 0.16s (CPU time)
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+
+Task completed in 0.18s (CPU time)
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+
+Task completed in 0.21s (CPU time)
+
+Task completed in 0.27s (CPU time)
+
+Task completed in 0.28s (CPU time)
+
+Task completed in 0.38s (CPU time)
+
+Task completed in 0.39s (CPU time)
+
+Task completed in 0.47s (CPU time)
+
+Task completed in 0.47s (CPU time)
+
+Task completed in 0.47s (CPU time)
+('make_experiment 101', 'stump:', 'java -cp commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'evaluators:', ['EvaluatePrequential -i 20000000 -f 1000 -q 1000'], 'learners:', ['-l trees.EFDT'], 'generators:', ['-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf0.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf1.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf2.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf3.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf4.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf5.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf6.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf7.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf8.arff -c -1)', '-s (ArffFileStream -f  /home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf9.arff -c -1)'])
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+in the looper
+traceback inspect
+('output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('changed dir name mcv.MOA_DIR', '/home/shivam/PycharmProjects/vfdt/execmoa')
+('print output directory', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/0')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd04836640>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/0')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/0')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.EFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf0.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/1')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d5f0>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/1')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/1')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.EFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf1.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/2')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d730>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/2')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/2')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.EFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf2.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/3')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d690>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/3')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/3')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.EFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf3.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/4')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d780>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/4')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/4')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.EFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf4.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/5')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d7d0>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/5')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/5')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.EFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf5.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/6')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d820>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/6')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/6')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.EFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf6.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/7')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d870>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/7')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/7')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.EFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf7.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/8')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d8c0>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/8')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/8')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.EFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf8.arff', '-c', '-1)'])
+('simpleExperiments.py -> output_dir', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('simpleExperiments.py -> output_file', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/9')
+('args of make_running_process', 'exp:', <simpleExperiments.Experiment instance at 0x7fcd0454d910>, 'output_file:', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/9')
+('output_file in simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/9')
+('args in simpleExperiments.py --> ', ['java', '-cp', 'commons-math3-3.6.1.jar:guava-22.0.jar:moa.jar:VFDT.jar', 'moa.DoTask', 'EvaluatePrequential', '-i', '20000000', '-f', '1000', '-q', '1000', '-l', 'trees.EFDT', '-s', '(ArffFileStream', '-f', '/home/shivam/PycharmProjects/vfdt/datasets/wisdm/wisdmshuf9.arff', '-c', '-1)'])
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+- 0.00s [running] Preparing option stream...
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/- 0.00s [running] Preparing option stream...
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+{M}assive {O}nline {A}nalysis
+Version:  16.04 April 2016
+Copyright: (C) 2007-2016 University of Waikato, Hamilton, New Zealand
+Web: http://moa.cms.waikato.ac.nz/
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+
+Task completed in 0.18s (CPU time)
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.- 0.34s [running] 76.00% Evaluating learner...
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+
+Task completed in 0.38s (CPU time)
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+Can not access instrumentation environment.
+Please check if jar file containing SizeOfAgent class is
+specified in the java's "-javaagent" command line argument.
+
+Task completed in 0.43s (CPU time)
+2000
+2000
+2000
+2000
+2000
+
+Task completed in 0.51s (CPU time)
+
+Task completed in 0.68s (CPU time)
+
+Task completed in 0.88s (CPU time)
+
+Task completed in 0.98s (CPU time)
+
+Task completed in 0.91s (CPU time)
+
+Task completed in 0.93s (CPU time)
+
+Task completed in 1.03s (CPU time)
+('output_dirs in the looper', ['/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1'])
+('folder in the looper', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0')
+('all the files -> ', ['/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/1', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/8', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/9', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/0', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/7', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/2', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/3', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/5', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/4', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/6'])
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/1')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/8')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/9')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/0')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/7')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/2')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/3')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/5')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/4')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/0/6')
+('all_stream_mean_df',    learning evaluation instances  ...    splits
+0                    2427.612903  ...  0.258065
+[1 rows x 18 columns])
+('all_stream_mean_df',    learning evaluation instances  ...    splits
+0                    2427.612903  ...  0.258065
+[1 rows x 18 columns])
+('folder in the looper', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1')
+('all the files -> ', ['/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/1', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/8', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/9', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/0', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/7', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/2', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/3', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/5', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/4', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/6'])
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/1')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/8')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/9')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/0')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/7')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/2')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/3')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/5')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/4')
+('this file in the looper -> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/output/2/1/6')
+('all_stream_mean_df',    learning evaluation instances  ...  splits
+0                    2427.612903  ...     2.0
+[1 rows x 18 columns])
+('all_stream_mean_df',    learning evaluation instances  ...  splits
+0                    2427.612903  ...     2.0
+[1 rows x 18 columns])
+/home/shivam/PycharmProjects/vfdt/venv/local/lib/python2.7/site-packages/matplotlib/axes/_base.py:3152: UserWarning: Attempting to set identical left==right results
+in singular transformations; automatically expanding.
+left=2.4276129032258065, right=2.4276129032258065
+  'left=%s, right=%s') % (left, right))
+/home/shivam/PycharmProjects/vfdt/venv/local/lib/python2.7/site-packages/matplotlib/axes/_base.py:3477: UserWarning: Attempted to set non-positive ylimits for log-scale axis; invalid limits will be ignored.
+  'Attempted to set non-positive ylimits for log-scale axis; '
+('figPath simpleExperiments.py --> ', '/home/shivam/PycharmProjects/vfdt/exp_dir/figures/002')

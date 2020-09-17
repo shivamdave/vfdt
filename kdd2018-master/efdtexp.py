@@ -22,7 +22,7 @@ def runexp(learners, generators, evaluators, suffix):
     experiments = se.CompositeExperiment.make_experiments(mcv.MOA_STUMP, evaluators, learners, generators)
     print('step 2: experiment obj complete')
     # ---------- Comment these lines out to get just charts
-    processes = se.CompositeExperiment.make_running_processes(experiments, output_dir
+    processes = se.CompositeExperiment.make_running_processes(experiments, output_dir)
     print('step 3: process obj complete')
     se.Utils.wait_for_processes(processes)
     print('step 4: process obj complete')
@@ -124,8 +124,7 @@ def shuffledRealExpOps(exp_no, num_streams, learners, generator_template, evalua
         processes = se.CompositeExperiment.make_running_processes(seeded_experiments, output_dir)
         all_processes.extend(processes)
 
-        exit_codes = [p.wait() for p in
-                      all_processes]  # USE THIS ONE FOR FONTS so it doesn't overload RAM. 4Gig per process.
+        exit_codes = [p.wait() for p in all_processes]  # USE THIS ONE FOR FONTS so it doesn't overload RAM. 4Gig per process.
     ###+++++++++++++++++
     # exit_codes = [p.wait() for p in all_processes]
 

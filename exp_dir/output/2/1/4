@@ -1,0 +1,5 @@
+learning evaluation instances,evaluation time (cpu seconds),model cost (RAM-Hours),classified instances,classifications correct (percent),Kappa Statistic (percent),Kappa Temporal Statistic (percent),Kappa M Statistic (percent),model training instances,model serialized size (bytes),tree size (nodes),tree size (leaves),active learning leaves,tree depth,active leaf byte size estimate,inactive leaf byte size estimate,byte size estimate overhead,splits
+1000.0,0.35322327,0.0,1000.0,55.900000000000006,34.61290394324222,37.97468354430381,28.409090909090917,1000.0,0.0,37.0,36.0,36.0,1.0,0.0,0.0,1.0,1.0
+2000.0,0.477285695,0.0,2000.0,81.0,72.717182000807,73.6842105263158,69.74522292993632,2000.0,0.0,37.0,36.0,36.0,1.0,0.0,0.0,1.0,1.0
+3000.0,0.751910559,0.0,3000.0,65.0,47.55289290750279,50.84269662921349,42.244224422442244,3000.0,0.0,75.0,72.0,71.0,2.0,0.0,0.0,1.0,3.0
+3421.0,0.808003484,0.0,3421.0,69.0,53.172134701109805,56.09065155807366,48.929159802306415,3421.0,0.0,75.0,72.0,71.0,2.0,0.0,0.0,1.0,3.0
